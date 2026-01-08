@@ -1,11 +1,11 @@
-package net.wetstudios.medievalglassmod;
+package net.wetstudios.wsmedievalglassmod;
 
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.neoforged.bus.EventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-import net.wetstudios.medievalglassmod.block.ModBlocks;
-import net.wetstudios.medievalglassmod.item.ModItems;
+import net.wetstudios.wsmedievalglassmod.block.ModBlocks;
+import net.wetstudios.wsmedievalglassmod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -29,6 +29,7 @@ public class MedievalGlassMod {
     public static final String MOD_ID = "wsmedievalglassmod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
+
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -75,4 +76,6 @@ public class MedievalGlassMod {
 
         }
     }
+
+
 }

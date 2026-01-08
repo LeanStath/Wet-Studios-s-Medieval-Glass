@@ -1,6 +1,5 @@
-package net.wetstudios.medievalglassmod.block;
+package net.wetstudios.wsmedievalglassmod.block;
 
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -9,8 +8,8 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.wetstudios.medievalglassmod.MedievalGlassMod;
-import net.wetstudios.medievalglassmod.item.ModItems;
+import net.wetstudios.wsmedievalglassmod.MedievalGlassMod;
+import net.wetstudios.wsmedievalglassmod.item.ModItems;
 
 import java.util.function.Supplier;
 
@@ -19,7 +18,7 @@ public class ModBlocks {
             DeferredRegister.createBlocks(MedievalGlassMod.MOD_ID);
 
     public static final DeferredBlock<Block> CASED_GLASS_BLOCK = registerBlock("cased_glass_block",
-            () ->  new Block(
+            () ->  new TransparentBlock(
                     BlockBehaviour.Properties.of()
                             .instrument(NoteBlockInstrument.HAT)
                             .strength(0.4F)

@@ -1,4 +1,4 @@
-package net.wetstudios.medievalglassmod;
+package net.wetstudios.wsmedievalglassmod;
 
 import java.util.List;
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wsmedievalglassmod:block/cased_glass_block"
+  },
+  "render_type": "translucent"
+}
